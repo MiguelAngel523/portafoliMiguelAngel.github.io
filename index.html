@@ -4,8 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Como es Miguel Angel</h1>
+    <div id="stage">
+        <div class="slide active">
+            <div class="div1">
+                <div id="header">
+                    <img src="./img/foto_perfil portafoli.jpeg" id="imgPerfil">
+                    <h2>Miguel Angel Cortes Cordoba</h2>
+                </div>
+                <div class="content1">
+                    <h2>Sobre mi</h2>
+                    <p class="text">Hola, mi nombre es Miguel Angel Cortes Cordoba soy un siervo de Cristo, originario de Colombia. Soy una persona amable, responsable, me gusta implicarme mucho en mi trabajo y hacerlo de una forma que cumpla con las expectativas de calidad. Me gusta aprender de las personas que me quieran enseñar.</p>
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li class="text">Adorador</li>
+                        <li class="text">Boxeo</li>
+                        <li class="text">Natacion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="div1">
+                <h2 class="title">Experiencia</h2>
+                <div class="divEstudis">
+                    <div class="content1" id="divForEstu">
+                        <h2>Formacion academica</h2>
+                        <p>Esta es la formacion en estudios que he recibido:</p>
+                        <ul id="ulEstudis">
+                            <li><strong>Sistemas Microinformaticos y Redes</strong><br>
+                                Intituto Salvador Espriu 2022 - 2024
+                            </li>
+                            <li><strong>Desarrollo Aplicaciones Web</strong><br>
+                                Intituto Montilivi 2024 - actualmente
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content1" id="divForLabor">
+                        <h2>Formacion laboral</h2>
+                        <p>Esta es la formacion en empresas que he recibido:</p>
+                        <ul>
+                            <li><strong>IP Marketing</strong> 2023
+                                <ul class="subLista">
+                                    <li>Maquetacion web (Wordpress)</li>
+                                    <li>Arreglos en sitios web</li>
+                                </ul>
+                            </li>
+                            <li><strong>DXC</strong> 2025 - 2026
+                                <ul class="subLista">
+                                    <li>Desarrollo de aplicaciones web usando frameworks: Angular y spring Boot</li>
+                                    <li>Consultas a bases de datos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frameworks">
+                    <div class="framework">
+                        <img src="./img/logo_angular.png" alt="">
+                        <p>Angular</p>
+                    </div>
+                    <div class="framework">
+                        <img src="./img/logo_vue.png" alt="">
+                        <p>Vue</p>
+                    </div>
+                    <div class="framework">
+                        <img src="./img/spring-boot-logo.png" alt="">
+                        <p>Spring boot</p>
+                    </div>
+                    <div class="framework">
+                        <img src="./img/symfony.png" alt="">
+                        <p>Symfony</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="slide">
+            
+            <div class="div1">
+                <div class="divLanguages">
+                    <div class="divLang">
+                        <h2>Lenguajes coding</h2>
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 67%"></div>
+                        </div>
+                        <h4>HTML y CSS</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <h4>Php</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 46%"></div>
+                        </div>
+                    </div>
+                    <div class="divLang">
+                        <h2>Idiomas</h2>
+                        <h4>Español</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                        <h4>Inglés</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                        <h4>Catalán</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="title">Proyectos</h2>
+                <div class="divWeb">
+                    <div class="webText">
+                        <h2>Taller de empresas</h2>
+                        <p>Esta es una web que maqueté en mi estancia en la empresa IP Marketing usando el CMS wordpress</p>
+                        <a href="https://tallerdempreses.com/" target="_blank">Taller de empresas</a>
+                    </div>
+                    <div class="webImg">
+                        <img src="./img/web_tallerdempresas.png" alt="">
+                    </div>
+                </div>
+                <div class="divWeb">
+                    <div class="webImg">
+                        <img src="./img/web_fruitaVips.png" alt="">
+                    </div>
+                    <div class="webText">
+                        <h2>Fruita VIPS</h2>
+                        <p>Esta es una web que maqueté en mi estancia en la empresa IP Marketing usando el CMS wordpress</p>
+                        <a href="https://fruitavips.com/" target="_blank">Fruita VIPS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
